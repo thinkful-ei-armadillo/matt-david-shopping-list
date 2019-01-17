@@ -44,7 +44,8 @@ function main(){
   $('#js-shopping-list-form').submit(function(event){
     event.preventDefault();
     const userPut = getUserInput();
-    addHtmlGenerator(userPut);
+    if(userPut !== '')
+      addHtmlGenerator(userPut);
   });
   crossText();
   deleteListItem();
