@@ -46,6 +46,8 @@ function main(){
     const userPut = getUserInput();
     if(userPut !== '')
       addHtmlGenerator(userPut);
+    this.reset();
+
   });
   crossText();
   deleteListItem();
